@@ -9,6 +9,8 @@ html {
 
 .content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar {
@@ -49,4 +51,138 @@ html {
   content: url('images/light-parrot.svg');
   align-self: center;
   margin-right: 10px;
+}
+
+
+.messages__message {
+  width: 100%;
+  padding: 12px 54px 12px 24px;
+  display: flex;
+}
+
+.messages__message.active {
+  background: #FFFAE7;
+}
+
+.messages__message__avatar {
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #979797;
+}
+
+.messages__message__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.messages__message__content__header {
+  margin-bottom: 9.1px
+}
+
+.messages__message__content__header__image {
+  display: inline;
+  vertical-align: middle;
+}
+
+.messages__message__content__header__image-gray-parrot {
+  content: url('images/grey-parrot.svg');
+}
+
+.messages__message__content__header__image-gray-parrot:hover {
+  content: url('images/red-parrot.svg');
+  cursor: pointer;
+}
+
+.messages__message__content__header__image-red-parrot {
+  content: url('images/red-parrot.svg');
+}
+
+.messages__message__content__header__image-red-parrot:hover {
+  content: url('images/grey-parrot.svg');
+  cursor: pointer;
+}
+
+.messages__message__content__header__username {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: #494949;
+}
+
+.messages__message__content__header__time, .messages__message__content__header__separator {
+  font-size: 12px;
+  line-height: 12px;
+  color: #D1D1D1;
+}
+
+.messages__message__content__header__separator {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.messages__message__content__body {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #494949;
+}
+
+.empty_separator {
+  flex-grow: 1;
+}
+
+.send_messages {
+  background: #EFEFEF;
+  box-sizing: border-box;
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  bottom: 0;
+  padding: 24px;
+}
+
+.send_messages__wrapper {
+  padding: 24px;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.send_messages__wrapper__form {
+  display: flex;
+  height: 52px;
+}
+
+.send_messages__wrapper__avatar {
+  min-width: 52px;
+  min-height: 52px;
+  max-width: 52px;
+  max-height: 52px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #979797;
+  float: left;
+}
+
+.send_messages__wrapper__input {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  flex-grow: 1;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-width: 0;
+}
+
+.send_messages__wrapper__send_button {
+  text-align: center;
+  display: flex;
+  margin-top: 10px;
 }
