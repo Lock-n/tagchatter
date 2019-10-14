@@ -3,11 +3,14 @@
   <head>
     <title>TagChatter</title>
 
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lato" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/toastr.min.css" rel="stylesheet">
 
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/toastr.min.js"></script>
   </head>
 
   <body class="wrapper">
@@ -26,60 +29,9 @@
         </div>
       </header>
       <div class="messages">
-        <div class="messages__message">
-          <div class="messages__message__avatar" style="background-color: aqua; content: url('images/avatar1.svg')">
-          </div>
-          <div class="messages__message__content">
-            <div class="messages__message__content__header">
-              <span class="messages__message__content__header__username">
-                Hackernews
-              </span>
-              <span class="messages__message__content__header__separator">
-                  ●
-              </span>
-              <span class="messages__message__content__header__time">
-                  13:24
-              </span>
-              <span class="messages__message__content__header__separator">
-                  ●
-              </span>
-              <div class="messages__message__content__header__image messages__message__content__header__image-gray-parrot">
-              </div>
-            </div>
-            <div class="messages__message__content__body">
-                Since when can you get Node on iOS, is that something new?
-                I mean... we could probably have gotten Node on iOS since its creation... as long as the JIT wasn't enabled, no?
-            </div>
-          </div>
-        </div>
-
-        <div class="messages__message active">
-            <div class="messages__message__avatar" style="content: url('images/avatar2.svg')">
-            </div>
-            <div class="messages__message__content">
-              <div class="messages__message__content__header">
-                <span class="messages__message__content__header__username">
-                  Jackernews
-                </span>
-                <span class="messages__message__content__header__separator">
-                    ●
-                </span>
-                <span class="messages__message__content__header__time">
-                    13:25
-                </span>
-                <span class="messages__message__content__header__separator">
-                    ●
-                </span>
-                <div class="messages__message__content__header__image messages__message__content__header__image-red-parrot">
-                </div>
-              </div>
-              <div class="messages__message__content__body">
-                  If we override the firewall, we can get to the SQL alarm through the open-source JBOD matrix!
-              </div>
-            </div>
-          </div>
       </div>
-      <div class="empty_separator"></div>
+      <div class="messages_loading_bar">
+      </div>
       <div class="send_messages">
           <form class="send_messages__wrapper__form">
             <div class="send_messages__wrapper__avatar" style="content: url('images/avatar5.svg')"></div>
@@ -92,5 +44,7 @@
           </form>
       </div>
     </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

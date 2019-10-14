@@ -48,11 +48,17 @@ html {
 }
 
 .header__parrots-count::before {
-  content: url('images/light-parrot.svg');
+  content: url('../images/light-parrot.svg');
   align-self: center;
   margin-right: 10px;
 }
 
+.messages {
+  overflow: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
 
 .messages__message {
   width: 100%;
@@ -90,20 +96,20 @@ html {
 }
 
 .messages__message__content__header__image-gray-parrot {
-  content: url('images/grey-parrot.svg');
+  content: url('../images/grey-parrot.svg');
 }
 
 .messages__message__content__header__image-gray-parrot:hover {
-  content: url('images/red-parrot.svg');
+  content: url('../images/red-parrot.svg');
   cursor: pointer;
 }
 
 .messages__message__content__header__image-red-parrot {
-  content: url('images/red-parrot.svg');
+  content: url('../images/red-parrot.svg');
 }
 
 .messages__message__content__header__image-red-parrot:hover {
-  content: url('images/grey-parrot.svg');
+  content: url('../images/grey-parrot.svg');
   cursor: pointer;
 }
 
@@ -123,8 +129,8 @@ html {
 }
 
 .messages__message__content__header__separator {
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .messages__message__content__body {
@@ -136,8 +142,14 @@ html {
   color: #494949;
 }
 
-.empty_separator {
+.messages_loading_bar {
+  background-image: url('../images/loading.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
 }
 
 .send_messages {
@@ -185,4 +197,5 @@ html {
   text-align: center;
   display: flex;
   margin-top: 10px;
+  cursor: pointer;
 }
