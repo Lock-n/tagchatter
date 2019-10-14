@@ -199,3 +199,7 @@ html {
   margin-top: 10px;
   cursor: pointer;
 }
+
+.send_messages__wrapper__send_button:hover svg path {
+  fill: red
+}
