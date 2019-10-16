@@ -33,5 +33,5 @@ O `unparrot` de mensagens foi implementado na função `unparrotMessage(messageI
 
 ### Detalhes sobre os requisitos adicionais
 - Minha implementação não utiliza nenhum framework adicional
-- Utiliza duas bibliotecas Javascript adicionais: jQuery e (Toaststr)[https://github.com/CodeSeven/toastr]
+- Utiliza duas bibliotecas Javascript adicionais: jQuery e [Toaststr](https://github.com/CodeSeven/toastr)
 - As requisições para a API são feitas client-side e a aplicação consiste somente em uma página.
