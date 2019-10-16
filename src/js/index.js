@@ -293,4 +293,4 @@
   }
 
   initialize();
-})("http://localhost:3000");
+})("https://tagchatter.herokuapp.com");
